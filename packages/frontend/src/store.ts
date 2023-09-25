@@ -104,7 +104,7 @@ export const defaultStore = markRaw(new Storage('base', {
 	},
 	reactionAcceptance: {
 		where: 'account',
-		default: 'nonSensitiveOnly' as 'likeOnly' | 'likeOnlyForRemote' | 'nonSensitiveOnly' | 'nonSensitiveOnlyForLocalLikeOnlyForRemote' | null,
+		default: null as 'likeOnly' | 'likeOnlyForRemote' | 'nonSensitiveOnly' | 'nonSensitiveOnlyForLocalLikeOnlyForRemote' | null,
 	},
 	mutedAds: {
 		where: 'account',
@@ -117,13 +117,12 @@ export const defaultStore = markRaw(new Storage('base', {
 			'notifications',
 			'clips',
 			'drive',
-			'followRequests',
 			'-',
 			'explore',
 			'announcements',
-			'search',
 			'-',
 			'ui',
+			'reload',
 		],
 	},
 	visibility: {
@@ -192,7 +191,7 @@ export const defaultStore = markRaw(new Storage('base', {
 	},
 	animatedMfm: {
 		where: 'device',
-		default: false,
+		default: true,
 	},
 	advancedMfm: {
 		where: 'device',
@@ -236,7 +235,7 @@ export const defaultStore = markRaw(new Storage('base', {
 	},
 	showFixedPostFormInChannel: {
 		where: 'device',
-		default: false,
+		default: true,
 	},
 	enableInfiniteScroll: {
 		where: 'device',
@@ -248,7 +247,7 @@ export const defaultStore = markRaw(new Storage('base', {
 	},
 	showGapBetweenNotesInTimeline: {
 		where: 'device',
-		default: false,
+		default: true,
 	},
 	darkMode: {
 		where: 'device',
@@ -256,7 +255,7 @@ export const defaultStore = markRaw(new Storage('base', {
 	},
 	instanceTicker: {
 		where: 'device',
-		default: 'remote' as 'none' | 'remote' | 'always',
+		default: 'always' as 'none' | 'remote' | 'always',
 	},
 	reactionPickerSize: {
 		where: 'device',
@@ -324,7 +323,7 @@ export const defaultStore = markRaw(new Storage('base', {
 	},
 	showClipButtonInNoteFooter: {
 		where: 'device',
-		default: false,
+		default: true,
 	},
 	reactionsDisplaySize: {
 		where: 'device',
@@ -436,8 +435,8 @@ interface Watcher {
 /**
  * 常にメモリにロードしておく必要がないような設定情報を保管するストレージ(非リアクティブ)
  */
-import lightTheme from '@/themes/l-light.json5';
-import darkTheme from '@/themes/d-green-lime.json5';
+import lightTheme from '@/themes/l-u0.json5';
+import darkTheme from '@/themes/d-u0.json5';
 
 export class ColdDeviceStorage {
 	public static default = {
