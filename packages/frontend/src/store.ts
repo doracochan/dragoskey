@@ -388,15 +388,15 @@ export const defaultStore = markRaw(new Storage('base', {
 	},
 	sound_note: {
 		where: 'device',
-		default: { type: 'syuilo/n-aec', volume: 1 },
+        default: { type: 'syuilo/poi2', volume: 1 },
 	},
 	sound_noteMy: {
 		where: 'device',
-		default: { type: 'syuilo/n-cea-4va', volume: 1 },
+        default: { type: 'syuilo/poi1', volume: 1 },
 	},
 	sound_notification: {
 		where: 'device',
-		default: { type: 'syuilo/n-ea', volume: 1 },
+		default: { type: 'syuilo/pope1', volume: 1 },
 	},
 	sound_antenna: {
 		where: 'device',
