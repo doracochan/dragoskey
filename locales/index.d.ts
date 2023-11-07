@@ -1802,6 +1802,7 @@ export interface Locale {
         "contributors": string;
         "allContributors": string;
         "source": string;
+        "sourceDragoskey": string;
         "translation": string;
         "donate": string;
         "morePatrons": string;
