@@ -12,10 +12,15 @@
 
 -->
 
+## 2023.12.0-drg-1.0.1
+
+### General
+- Enhance: 変更を削除（どらごすきーアイコンを追加、 横幅の長い絵文字を圧縮して表示）
+
 ## 2023.11.0-drg-1.0.1
 
 ### Client
-- Enhance: 横幅の長い絵文字をを圧縮して表示するか選べるように ([backspacekeyより取り込み](https://github.com/kanarikanaru/backspacekey))
+- Enhance: 横幅の長い絵文字を圧縮して表示するか選べるように ([backspacekeyより取り込み](https://github.com/kanarikanaru/backspacekey))
 
 ## 2023.11.0-drgoskey1.0.0
 
