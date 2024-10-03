@@ -453,6 +453,14 @@ export const defaultStore = markRaw(new Storage('base', {
 		where: 'device',
 		default: true,
 	},
+	confirmWhenRevealingSensitiveMedia: {
+		where: 'device',
+		default: false,
+	},
+  contextMenu: {
+		where: 'device',
+		default: 'app' as 'app' | 'appWithShift' | 'native',
+  },
 
 	sound_masterVolume: {
 		where: 'device',
@@ -477,14 +485,6 @@ export const defaultStore = markRaw(new Storage('base', {
 	sound_notification: {
 		where: 'device',
 		default: { type: 'syuilo/pope1', volume: 1 } as SoundStore,
-	},
-	sound_antenna: {
-		where: 'device',
-		default: { type: 'syuilo/triple', volume: 1 } as SoundStore,
-	},
-	sound_channel: {
-		where: 'device',
-		default: { type: 'syuilo/square-pico', volume: 1 } as SoundStore,
 	},
 	sound_reaction: {
 		where: 'device',
